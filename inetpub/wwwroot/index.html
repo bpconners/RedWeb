@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+	<link type="text/css" rel="stylesheet" href="superstyler.css"/>
+	<title>The Directory</title>
+<script>
+
+	function handleClick(event){
+		event.stopPropagation();
+
+		var node=event.target;
+		var thisPath=node.nodeName;
+
+		while (node.parentNode){
+			node = node.parentNode;
+			thisPath = node.nodeName+ " > " + thisPath;
+		}
+		alert(thisPath);	
+	}
+
+	function attachHandler(node){
+		if(node==null) {
+			return;
+			node.onClick=handleClick;
+		}
+
+		for (var i=0; i < node.childNodes.length; ++i){
+			attachHandler(node.childNodes[i]);
+		}
+
+
+	}
+</script>
+
+
+</head>
+
+<body bgcolor="#E6E6FA">
+	<H1 ID="start">Welcome to the Directory!</H1>
+
+
+	<p>
+		<ul>Week 3 
+			<ul>
+				<li><a href="Week3/Sample.html">Sample</a></li>
+				<li><a href="Week3/Nodes.html">Nodes</a></li>
+				<li><a href="Week3/div.html" target="_blank">div project</a></li>
+				<li><a href="Week3/part1.html" target="_black">Part1</a></li>
+				<li><a href="Week3/part2.html" target="_black">Part2</a></li>
+				<li><a href="Week3/part3.html" target="_black">Part3</a></li>
+				<li><a href="Week3/part4.html" target="_black">Part4</a></li>
+
+				<p></p>
+			</ul>
+			Week 2 Guessing Game
+			<ul>
+				
+				<li><a href="GuessingGame/part1.html">Part1</a></li>
+				<li><a href="GuessingGame/part2.html">Part2</a></li>
+				<p></p>
+			</ul>
+			Week 1 Dating Site
+			<ul>
+				<li><a href="Dating/part1.html">Part1</a></li>
+				<li><a href="Dating/part2.html">Part2</a></li>
+				<li><a href="Dating/part3.html">Part3</a></li>
+				<p></p>
+			</ul>
+			Standing
+			
+			<ul>	
+			<li><a href="supersampler.html">Super Sampler</a></li>
+			<li><a href="doctor.html">Doctor</a></li>
+			<li><a href="test.html">test</a></li>
+			<li><a href="SVGPage.html">SVG page</a></li>
+			<p></p>
+			</ul>
+		</ul>
+	</p>
+	<fieldset>
+	<legend>Your Indicators</legend>
+		<label for="height">Height:</label>
+			<label for="short">Short:</label>
+			<input type="range" min="0" max="100" step="10" value="50" id="height" name="height">
+			<label for="tall">Tall:</label><br>
+		<label for="income">Income:</label>
+			<label for="poor">Poor:</label>
+			<input type="range" min="0" max="100" step="10" value="50" id="income" name="income">
+			<label for="rich">Rich:</label><br>
+	</fieldset><br>
+	<fieldset>
+	<legend>Your Contact info</legend>
+	<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+	<label for="mobile">Mobile:</label>
+		<input type="tel" id="mobile" name="mobile"><br><br>
+	<label for="address">Address:</label>	
+		<textarea id="address" name="address">
+		</textarea><br><br>
+
+		<label for="contactmethod">Method to contact you:</label>
+		<label for="conByEmail">Email</label>
+			<input type="checkbox" id="conByEmail" name="contactMethod" value="email">
+		<label for="conByWhatsapp">Whats App</label>
+			<input type="checkbox" id="conByWhatsapp" name="contactMethod" value="Whatsapp">
+		<label for="conByChat">in-app chat</label>
+			<input type="checkbox" id="conByChat" name="contactMethod" value="chat">
+	</fieldset><br>
+
+
+
+	<p class="redRoom">
+		redRoom
+	</p>
+	<p class="blueRoom">
+		blueRoom	
+	</p>
+	<p class="yellowRoom">
+		yellowRoom	
+	</p>
+	<p class="orangeRoom">
+		orangeRoom	
+	</p>
+	<p class="violetRoom">
+		violetRoom	
+	</p>
+	<p class="greenRoom">
+		greenRoom	
+	</p>
+	<p class="greenRoom">
+		greenRoom	
+	</p>
+
+
+	<p ID="unique">
+		unique - There is only one of these baby!
+	</p>
+
+
+	<p>
+	<table class="table1">
+	<thead>
+	<th>
+	<tr></tr>
+	<td colspan="3" height="30" style="border: 2px solid #000000; border-radius: 5px; font-size=30px">Useful Links</td>
+	<tr></tr>
+	</th>
+	</thead>
+		<tr></tr>
+			<td><a href="http://www.w3schools.com/html/html_colorvalues.asp">W3 color Samples</a></td>
+			<td><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">W3 color Picker</a></td>
+			<td><a href="http://www.timvandevall.com/wp-content/uploads/2013/08/Color-Wheel-Template-02.png">Hex Color Wheel</a></td>
+
+			http://www.timvandevall.com/wp-content/uploads/2013/08/Color-Wheel-Template-02.png
+			<td></td>
+			<td></td>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+	</table>
+		<ol>
+			<li>Introduction
+			</li>
+			<li>Main Section1
+			</li>
+			<li>Main Section2
+				<ol>
+					<li>S2 Part 1
+					<ol>
+						<li>one
+							<ol>
+								<li>one Sub 1
+								</li>
+							</ol>
+						</li>
+					<li>two
+					</li>
+					<li>thee
+					</li>
+					</ol>
+					</li>
+					<li>S3 
+					</li>
+					<li>third</li>
+				</ol>
+			</li>
+			<li>
+			</li>
+			<li>
+			</li>
+		</ol>
+	</p>`
+<p style="border: 2px solid #6495ED"> Spacer </p>
+<p> Spacer </p>
+<p class="paddedRoom">
+	The padded Room	
+</p>
+
+<p>Test pattern</p>
+
+<p class="Red"> FF0000 </p>
+<p class="Green"> 00FF00 </p>
+<p class="Blue"> 0000FF </p>
+
+<p class="Yellow"> #FFFF00 </p>
+<p class="Violet"> #FF00FF </p>
+<p class="Cyan"> #00FFFF </p>
+
+<p id="down">I'm Down Here</p>
+<a href="#start"><img src="home-4x.png"></a>
+
+</body>
+</html>
