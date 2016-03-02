@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="auth" lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<meta property="og:title" content="gae-init" />
+<meta property="og:description" content="gae-init is the easiest way to start developing new applications on Google App Engine!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://gae-init.appspot.com/" />
+<meta property="og:image" content="https://gae-init.appspot.com/p/img/gae-init-favicon-512.png" />    <title>
+        Sign in |
+      gae-init
+    </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/mystyles.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="prerender" href="/" />
+  <link rel="prefetch" href="/" />
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-12558606-5', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </head>
+
+  <body>
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">gae-init</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="">
+          <a href="/user/?active=True&amp;order=-modified"> <i class="fa fa-fw fa-group"></i> User List</a>
+        </li>
+  <li class="">
+    <a href="/feedback/"><span class="fa fa-fw fa-comment"></span> Feedback</a>
+  </li>
+        <li class="">
+          <a href="/stats/"> <i class="fa fa-fw fa-bar-chart-o"></i> Stats</a>
+        </li>
+        <li>
+          <a href="https://github.com/gae-init/gae-init"><i class="fa fa-fw fa-github"></i> Download</a>
+        </li>
+        <li>
+          <a href="http://docs.gae-init.appspot.com" target="gae-init-docs"> <i class="fa fa-fw fa-book"></i> Documentation</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+  <li class="active">
+    <a href="/signin/"><span class="fa fa-fw fa-sign-in"></span> Sign in</a>
+  </li>
+      </ul>
+    </nav>
+  </div>
+</header>    <div class="container">
+<div id="notifications">
+</div>  <div class="page-header">
+    <h1>Sign in <small>It only takes 8 seconds</small></h1>
+  </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+<form method="POST" action="." novalidate>
+  <input id="csrf_token" name="csrf_token" type="hidden" value="1456340529##c4631bd1600f561c30ebc2ae0c943fd6028aad67">
+    <input id="next_url" name="next_url" type="hidden" value="/">
+
+  <input class="hide" id="remember" name="remember" type="checkbox" value="y">
+      <div class="form-group ">
+    <label class="control-label" for="email">Email</label>
+    
+      <input autofocus class="form-control input-lg" id="email" name="email" type="email" value="">
+    
+    
+  </div>
+
+
+    <div class="form-group ">
+    <label class="control-label" for="password">Password</label>
+    
+    <div class="input-group input-group-lg">
+      <input autocomplete="off" class="form-control" id="password" name="password" type="password" value="">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-password-show" type="button" data-target="#password" data-toggle="button" title="Show/Hide Password" tabindex="-1">
+          <span class="fa fa-eye"></span>
+        </button>
+      </span>
+    </div>
+    
+    
+  </div>
+
+  
+  <div class="controls">
+    <button type="submit" class="btn btn-block btn-lg btn-primary btn-loading"     data-loading-text="<span class='fa fa-spin fa-spinner'></span> Please wait.."
+>
+      Sign in
+    </button>
+  </div>
+  <div class="form-group">
+    <div class="btn-group btn-group-justified form-control-static">
+      <a class="btn btn-link btn-xs ellipsis" href="/user/forgot/">Forgot password?</a>
+      <a class="btn btn-link btn-xs ellipsis" href="/signup/?next=%2F">Create new account</a>
+    </div>
+  </div>
+</form>          <legend class="text-muted text-center">or</legend>
+        <div class="text-center">
+            <a class="btn btn-lg btn-social-icon btn-google" href="/signin/gae/?next=%2F" title="Sign in with Google" rel="nofollow">
+    <span class="fa fa-google"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-facebook" href="/signin/facebook/?next=%2F" title="Sign in with Facebook" rel="nofollow">
+    <span class="fa fa-facebook"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-twitter" href="/signin/twitter/?next=%2F" title="Sign in with Twitter" rel="nofollow">
+    <span class="fa fa-twitter"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-bitbucket" href="/signin/bitbucket/?next=%2F" title="Sign in with Bitbucket" rel="nofollow">
+    <span class="fa fa-bitbucket"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-dropbox" href="/signin/dropbox/?next=%2F" title="Sign in with Dropbox" rel="nofollow">
+    <span class="fa fa-dropbox"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-github" href="/signin/github/?next=%2F" title="Sign in with GitHub" rel="nofollow">
+    <span class="fa fa-github"></span>
+    
+  </a>
+
+          
+            <a class="btn btn-lg btn-social-icon btn-instagram" href="/signin/instagram/?next=%2F" title="Sign in with Instagram" rel="nofollow">
+    <span class="fa fa-instagram"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-linkedin" href="/signin/linkedin/?next=%2F" title="Sign in with LinkedIn" rel="nofollow">
+    <span class="fa fa-linkedin"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-microsoft" href="/signin/microsoft/?next=%2F" title="Sign in with Microsoft" rel="nofollow">
+    <span class="fa fa-windows"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-reddit" href="/signin/reddit/?next=%2F" title="Sign in with Reddit" rel="nofollow">
+    <span class="fa fa-reddit"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-vk" href="/signin/vk/?next=%2F" title="Sign in with VK" rel="nofollow">
+    <span class="fa fa-vk"></span>
+    
+  </a>
+
+            <a class="btn btn-lg btn-social-icon btn-yahoo" href="/signin/yahoo/?next=%2F" title="Sign in with Yahoo!" rel="nofollow">
+    <span class="fa fa-yahoo"></span>
+    
+  </a>
+
+        </div>
+        <hr>
+        <div class="checkbox remember">
+          <label><input type="checkbox" checked>Keep me signed in</label>
+        </div>
+      </div>
+    </div>
+    </div>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="social github" data-repo="gae-init">
+      <a class="share" href="https://gae-init-slack.herokuapp.com"><img class="img" src="https://gae-init-slack.herokuapp.com/badge.svg" alt="Slack"></a>
+<!--     <iframe class="share" src="/github-btn.html?user=lipis&amp;type=follow" width="100"></iframe>                                   -->         
+<!--     <iframe class="share" src="/github-btn.html?user=gae-init&amp;repo=gae-init&amp;type=watch&amp;count=true" width="90"></iframe> -->
+      <a class="share twitter-share-button" href="https://twitter.com/share" data-url="http://gae-init.appspot.com" data-text="gae-init is the easiest way to start developing new applications on Google App Engine" data-via="gaeinit" data-hashtags="gaeinit">Tweet</a>
+      <div class="share g-plusone" data-size="medium" data-annotation="bubble" data-width="60" data-href="http://gae-init.appspot.com"></div>
+    </div>
+    <hr>
+    <p>
+      Version: 4.0.1
+      (<time datetime="2016-02-03 23:32:37">2016-02-03 23:32:37</time>)
+    </p>
+    <p>&copy; 2012 &minus; 2016 &vellip; gae-init</p>
+  </div>
+</footer>  <script src="/p/min/script/ext.js?4-0-1.390450740947851128"></script>
+  <script src="/p/min/script/script.js?4-0-1.390450740947851128"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>  </body>
+</html>
