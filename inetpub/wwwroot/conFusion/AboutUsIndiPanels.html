@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-livestyle-extension="available">
+<!--head-->
+<head>
+<!--meta data-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--title-->
+    <title>Ristorante Con Fusion: About Us</title>
+<!--links (especially to CSS files)-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+</head>
+<!--body-->
+<body>
+<!--navigation section-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+<!--navigation bar-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<!--code that makes the navigation bar foldup when xs mode...-->            
+                    <span class="sr-only">Toggle navigation</span> 
+<!--creates the three horizonal lines that constitute the icon-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+<!--navbar buttons -->
+                </button>
+<!--navbar buttons -->
+                <a class="navbar-brand" href="indexA2.html"><img src="img/logo.png" height=30 width=41></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="home"><a href="indexA2.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <li class="active"><a href="AboutUsA2.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+                    <li class="dropdown">
+<!--data-parent is not present in the anchor, which allows the panels to work independantly, if you want the others to close when you open another, you would assign them all to the same "data-parent" in this case: data-parent="#accordion".  
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"></span> Menu <span class="caret"></span></a>
+<!--menu dropdown content of -->
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Appetizers</a></li>
+                        <li><a href="#">Main Courses</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#">Drinks</a></li>
+                        <li role="seperator" class="divider"></li>
+                        <li class="dropdown-header">Specials</li>
+                        <li><a href="#">Lunch Buffet</a></li>
+                        <li><a href="#">Weekend Brunch</a></li>
+                    </ul>
+<!--end menu, return to navbar -->                              
+                    <li class="contact"><a href="contactusA2.html#"><span class="fa fa-envelope-o" aria-hidden="true"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--navigation bar end-->
+<!--page header (not head this is the second HTML element, it comes after the nav bar)-->
+    <header class="jumbotron"><!-- Main component for a primary marketing message or call to action -->
+        <div class="container">
+            <div class="row-header">
+                <div class="col-xs-12 col-sm-8">                    
+                    <h1>Ristorante con Fusion</h1>
+                    <p style="padding:40px;"></p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-xs-12 col-sm-2"><!--would be logo goes in this div to occupy last 1/3-->
+                    <p style="padding:20px;"></p>
+                    <img src="img/logo.png" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </header>
+<!--header end-->
+    <div class="container">
+        <div class="row">
+            <div>
+                <ul class="breadcrumb">
+                  <li><a href="indexA2.html">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="row-header">
+                <div class="col-xs-12">
+                   <h3>About Us</h3>
+                   <hr>
+                </div>
+            </div>      
+        </div>
+        <div class="row-content">
+            <div class="col-xs-12 col-sm-6 col-lg-8">
+                <h2>Our History</h2>
+                <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
+                <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+            <div class="well">
+                <blockquote>
+                    <p>You better cut the pizza in four pieces because
+                        I'm not hungry enough to eat six.</p>
+                    <footer>Yogi Berra,
+                      <cite>The Wit and Wisdom of Yogi Berra,
+                        P. Pepe, Diversion Books, 2014</cite>
+                    </footer>
+                </blockquote>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Facts At a Glance
+                        <!--button class="btn btn-xs pull-right">&times;</button-->
+
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <dl class="dl-horizontal">
+                            <dt>Started</dt>
+                            <dd>3 Feb. 2013</dd>
+                            <dt>Major Stake Holder</dt>
+                            <dd>HK Fine Foods Inc.</dd>
+                            <dt>Last Year's Turnover</dt>
+                            <dd>$1,250,375</dd>
+                            <dt>Employees</dt>
+                            <dd>40</dd>
+                       </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-content">
+            <div>
+                <h2>Corporate Leadership</h2>
+
+                <div class="panel-group" role="tablist" id="accordion" aria-multiselectable="true">
+<!--starts the panel accordian-->                    
+<!--panel 1 head--> <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingPeter">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" href="#peter" aria-expanded="true" aria-controls="peter">
+                                Peter Pan <small>Chief Epicurious Officer</small></a>
+                            </h3>
+                        </div>
+<!--panel 1 body-->     <div role="tabpanel" class="panel-collapse collapse in" id="peter" aria-labelledby="headingPeter">
+                            <div class="panel-body">
+                                <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                            </div>    
+                        </div>
+                    </div>    
+<!--panel 2 head--> <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingDanny">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" href="#danny" aria-expanded="true" aria-controls="danny">
+                                Dhanasekaran Witherspoon <small>Chief Food Officer</small></a>
+                            </h3>
+                        </div>
+<!--panel 2 body-->     <div role="tabpanel" class="panel-collapse collapse" id="danny" aria-labelledby="headingDanny">    
+                            <div class="panel-body">         
+                                <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
+                            </div>
+                        </div>
+                    </div>
+<!--panel 3 head--> <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingAgumbe">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" href="#agumbe" aria-expanded="true" aria-controls="agumbe">
+                                Agumbe Tang <small>Chief Taste Officer</small></a>
+                            </h3>
+                        </div>
+<!--panel 3 body-->     <div role="tabpanel" class="panel-collapse collapse" id="agumbe" aria-labelledby="headingAgumbe">   
+                            <div class="panel-body">
+                                <p>Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
+                            </div>
+                        </div>
+                    </div>        
+<!--panel 4 head--> <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingAlberto">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" href="#alberto" aria-expanded="true" aria-controls="alberto">
+                                Alberto Somayya <small>Executive Chef</small></a>
+                            </h3>
+                        </div>    
+<!--panel 3 body-->     <div role="tabpanel" class="panel-collapse collapse" id="alberto" aria-labelledby="headingAlberto">
+                            <div class="panel-body"> 
+                                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                        </div>    
+                    </div>
+                </div>
+            </div>    
+                <div class="row">
+                <p style="padding:20px;"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-9">
+                    <h2>Facts &amp; Figures</h2>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <p style="padding:20px;"></p>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <th>
+                            2013
+                        </th>
+                        <th>
+                            2014
+                        </th>
+                        <th>
+                            2015
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                             Employees
+                        </th>
+                        <td>
+                            15
+                        </td>
+                        <td>
+                            30
+                        </td>
+                        <td>
+                            40
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Guests served
+                        </th>
+                        <td>
+                            1500
+                        </td>
+                        <td>45000</td>
+                        <td>100,000</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Special Events
+                        </th>
+                        <td>
+                            3
+                        </td>
+                        <td>20</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Annual Turnover
+                        </th>
+                        <td>$251,325</td>
+                        <td>$1,250,375</td>
+                        <td>~$3,000,000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+<!-- First Column - Links -->             
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="indexA2.html#">Home</a></li>
+                        <li><a href="aboutusA2.html#">About</a></li>
+                        <li><a href="Menu.html#">Menu</a></li>
+                        <li><a href="ContactUsA2.html#">Contact</a></li>
+                    </ul>
+                </div>
+<!-- Second Column - Address-->
+                <div class="col-xs-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address id=address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope"></i>: 
+                        <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+<!-- Third Column - social site links-->
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+<!-- Final Banner (12 of 12 wide)-->                
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align="center">© Copyright 2015 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--javascript required for this to work--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<!-- Local Scripts
+    <script src="js/jquery.min.js"></script>
+-->
+</body>
+</html>

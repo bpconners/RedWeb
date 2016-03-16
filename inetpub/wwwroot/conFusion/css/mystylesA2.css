@@ -65,23 +65,23 @@ body {
 }
 
 .navbar-inverse .navbar-nav > .open .dropdown-menu> li> a:hover {
-	color:#000000;
+	color:#000000
 }
+//added for assignement 2
 
-/* Added for assignment 2
-*/
 .tab-content {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;;
 	padding:10px;
 }
+
 .affix {
     top:100px;
 }
 
-/* Added for assignment 3
-*/
+
+//added for assignment 3
 
 .carousel{
 	background: #1A237E;
@@ -92,20 +92,8 @@ body {
 }
 
 .item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 300px;
+	position: absolute;
+	top: 0:
+	left 0;
+	min-height: 300px;
 }
-
-/* Added for assignment 4
-*/
-
-
-#carouselButtons {
-    right:0px;
-    position: absolute;
-    bottom: 0px;
-}
-
-

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)https://s3.amazonaws.com/medianetwork/Computing+Feb.March+/Feb+March+Computing_970x66_Week+2_2-28-16/970x66/Q2_MSFT_INTEL_970x66.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Q2_MSFT_INTEL_970x66</title>
+
+<style>
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+#banner {
+    position: relative;
+    width: 970px;
+    height: 66px;
+    color: white;
+    cursor: pointer;
+}
+</style>
+
+<script src="easeljs-0.8.1.min.js"></script>
+<script src="tweenjs-0.6.1.min.js"></script>
+<script src="movieclip-0.8.1.min.js"></script>
+<script src="preloadjs-0.6.1.min.js"></script>
+<script src="Q2_MSFT_INTEL_970x66.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib.Q2_MSFT_INTEL_970x66();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+
+
+<body onload="init();" style="background-color:#FFFFFF" marginwidth="0" marginheight="0">
+	<div id="banner">
+		<canvas id="canvas" width="970" height="66" style="background-color:#FFFFFF"></canvas>
+	</div>
+	<script type="text/javascript">
+	
+	document.getElementById("banner").addEventListener("mouseover",
+        function(){
+			 document.rollOverFunction();
+     });
+	
+	document.getElementById("banner").addEventListener("mouseout",
+        function(){
+			 document.rollOutFunction();
+     });
+	
+	
+	var clickTag = "";
+	
+     document.getElementById("banner").addEventListener("click",
+        function(){
+            window.open(window.clickTag);
+     });
+	 
+	</script>
+
+</body></html>
